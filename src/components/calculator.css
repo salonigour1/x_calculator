@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 160%;
+  background: rgb(174, 238, 206);
+  background: radial-gradient(
+    circle,
+    rgba(174, 238, 206, 1) 0%,
+    rgba(181, 211, 198, 1) 63%,
+    rgba(154, 226, 229, 1) 93%,
+    rgba(148, 227, 233, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+.keys {
+  /* padding: 1rem; */
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  border: 0.5px solid white;
+  background-color: #94e3e9;
+  transition: background-color 0.4s;
+}
+.keys:hover {
+  background-color: rgb(208, 245, 245);
+}
+.clear {
+  width: 8rem;
+}
+.equal {
+  width: 8rem;
+}
+.output {
+  box-sizing: border-box;
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(39, 38, 38);
+  color: white;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous-operator {
+  color: rgb(250, 245, 245, 0.75);
+  font-size: 1.5rempx;
+}
+.current-operator {
+  color: rgb(250, 245, 245);
+  font-size: 2.2rem;
+  /* background-color: rgb(39, 38, 38);
+  outline: none;
+  width: 100%;
+  border: none; */
+}
+.container {
+  margin: 6rem auto;
+  width: 16rem;
+  height: 24rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
